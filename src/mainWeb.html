@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="mainMenu">
+    <h1>Online Pool</h1>
+    <p>Play with your friends</p>
+    <div class="container">
+        <button class="button" onclick="createGame()" > Play Alone</button>
+    </div>
+</div>
+<div id="table" class="table" style="display: none">
+    <div> 
+        <p2>Pool Game </p2>
+        <button class="button" onclick="returnToMenu()">Menu</button>
+    </div>
+        <p3>Enter a game id if needed</p3>
+        <input type="number" id="gameId" oninput="checkForId()" maxlength="6">
+        <p2 id="gameIdOuput"> </p2>
+    <div class="pool-container">
+        <img src="image/pool.png" width="972" height="648" alt="Errror While Fetching the Pool Image">
+
+    </div>
+</div>
+</body>
+</html>
+
